@@ -1,9 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class App extends Component {
+import SearchBar from '../containers/searchbar';
+import WeatherList from '../containers/weather_list';
+export default class App extends React.Component {
   render() {
     return (
-      <div>React simple starter</div>
+      <div>
+        <SearchBar />
+        <WeatherList />
+      </div>
     );
   }
 }
